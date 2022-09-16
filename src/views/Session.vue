@@ -8,24 +8,37 @@
     </div>
     <button className="Add-Product">Add Product</button>
     <div>
-      <button className="By-People">By People</button>
-      <button className="By-Product">By Product</button>
+      <button @click="selecPage(true)" className="By-People">By People</button>
+      <button @click="selecPage(false)" className="By-Product">By Product</button>
     </div>
     <div>
-
+      <People v-show="page"/>
+      <Product v-show="!page"/>
     </div>
   </div>
 </template>
 <script >
+  import People from "../components/People.vue";
+  import Product from "../components/Product.vue";
 export default {
   name: "Session",
+  components: {
+    People,
+    Product
+  },
   data() {
     return {
-      // products,
-      //  participants,
+      page:true,
     };
   },
-  methods: {},
+  methods: {
+    selecPage(bolean){
+      this.page = bolean
+    },
+    mounted(){
+    
+    }
+  },
 };
 </script>
 <style scoped>
