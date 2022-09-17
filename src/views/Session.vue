@@ -1,25 +1,27 @@
 <template>
   <div class="Session">
-    <a href="/c"><h1>Session</h1></a>
+    <a href="/c">
+      <h1>Session</h1>
+    </a>
 
     <div>
       <input placeholder="Name Purchase" />
       <button className="Finish">Finish</button>
     </div>
-    <button className="Add-Product">Add Product</button>
+    <a href="/c"> <button className="Add-Product">Add Product</button> </a>
     <div>
       <button @click="selecPage(true)" className="By-People">By People</button>
       <button @click="selecPage(false)" className="By-Product">By Product</button>
     </div>
     <div>
-      <People v-show="page"/>
-      <Product v-show="!page"/>
+      <People v-show="page" />
+      <Product v-show="!page" />
     </div>
   </div>
 </template>
 <script >
-  import People from "../components/People.vue";
-  import Product from "../components/Product.vue";
+import People from "../components/People.vue";
+import Product from "../components/Product.vue";
 export default {
   name: "Session",
   components: {
@@ -28,33 +30,34 @@ export default {
   },
   data() {
     return {
-      page:true,
+      page: true,
     };
   },
   methods: {
-    selecPage(bolean){
+    selecPage(bolean) {
       this.page = bolean
     },
-    mounted(){
-    
+    mounted() {
+
     }
   },
 };
 </script>
 <style scoped>
-.Finish{
+.Finish {
   background-color: rgb(248 113 113)
 }
-.Add-Product{
+
+.Add-Product {
   background-color: rgb(125 211 252)
 }
-.By-People{
+
+.By-People {
   background-color: rgb(110 231 183)
 }
-.By-Product{
-  border:none;
+
+.By-Product {
+  border: none;
   background-color: rgb(255, 255, 255)
 }
-
-
 </style>

@@ -14,12 +14,8 @@
     }
   },
   methods:{
-    
-  }
-
+ }
 }
-
-
   </script>
 <style scoped>
 .read-the-docs {

@@ -57,13 +57,13 @@ const products = [{
     id: 1,
     name: "Item 1",
     price: "75.00",
-    participants: ["Ale", "Vit", "Jess", "Joe", "Bill", "Able", "Vbit", "bJess", "bJoe", "Bbill"],
+    participants: ["Ale", "Vit", "Jess", "Joe", "Bill", "Able", "Vbit", "Jbess", "Jboe", "Bbill"],
     quantity: "1"
 }, {
     id: 2,
     name: "Item 2",
     price: "50.00",
-    participants: ["Ale", "Vit", "Jess", "Joe", "Bill", "Able", "Vbit", "bJess", "bJoe", "Bbill"],
+    participants: ["Ale", "Vit", "Jess", "Joe", "Bill", "Able", "Vbit", "Jbess", "Jboe", "Bbill"],
     quantity: "1"
 }, {
     id: 3,
@@ -80,38 +80,32 @@ const products = [{
 }, {
     id: 5,
     name: "Item 5",
-    price: "30.00",
-    participants: ["Ale", "Vit"],
+    price: "80.00",
+    participants: ["Ale", "Vit","Bbill"],
     quantity: "1"
 }, {
-    id: 1,
+    id: 11,
     name: "Item 11",
     price: "75.00",
     participants: ["Ale", "Vit", "Jess", "Joe", "Bill"],
     quantity: "1"
 }, {
-    id: 2,
+    id: 12,
     name: "Item 12",
     price: "50.00",
     participants: ["Ale", "Vit", "Jess", "Joe", "Bill"],
     quantity: "1"
 }, {
-    id: 3,
+    id: 13,
     name: "Item 13",
     price: "45.00",
     participants: ["Ale", "Vit", "Jess"],
     quantity: "1"
 }, {
-    id: 4,
+    id: 14,
     name: "Item 14",
     price: "40.00",
     participants: ["Ale", "Vit", "Jess", "Joe"],
-    quantity: "1"
-}, {
-    id: 5,
-    name: "Item 15",
-    price: "30.00",
-    participants: ["Ale", "Vit"],
     quantity: "1"
 }]
 
