@@ -11,22 +11,28 @@
   </div>
 </template>
 <script >
-import { participants, products } from "../assets/mock.js";
+import { getUser, getProduct } from "../api/api.js";
 export default {
   name: "People",
   components: {
-    participants,
-    products,
   },
   data() {
     return {
-      product: products,
-      participant: participants,
+      product: [],
+      participant: [],
       total: 0,
       membars: null
     };
   },
   methods: {
+    async fgetUser() {
+      this.participant = await getUser()
+    },
+    async fgetProduct() {
+      this.product = await getProduct()
+      this.findMabers()
+      this.findTotal()
+    },
     findHowMuchEachToPay(name) {
       return this.product.map(p => p.participants.includes(name)
         ? (parseInt(p.price) * parseInt(p.quantity)) / p.participants.length : 0,
@@ -46,8 +52,8 @@ export default {
     }
   },
   mounted() {
-    this.findTotal(),
-      this.findMabers()
+    this.fgetUser(),
+      this.fgetProduct()
   }
 
 };
@@ -59,13 +65,15 @@ export default {
   line-height: 1.75rem;
   margin: 8px;
   padding: 8px;
-  
+
 }
-.peopleName{
+
+.peopleName {
   margin: 12px;
 }
-.peopleTotal{
-  
+
+.peopleTotal {
+
   margin: 12px;
   border-left-width: 2px;
   border-style: solid;
