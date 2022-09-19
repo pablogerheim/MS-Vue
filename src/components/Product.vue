@@ -9,31 +9,37 @@
       <div className="tableFor">
         <p>By 7</p>
         <p className="productTotal">R$ {{this.findHowMuchEachToPay(p.name)}}</p>
-       <a href="/u">
-         <button>U</button>
-       </a>
+        <a href="/u">
+          <button>U</button>
+        </a>
         <button>D</button>
       </div>
     </div>
   </div>
 </template>
 <script >
-import { participants, products } from "../assets/mock.js";
+import { getUser, getProduct } from "../api/api.js";
 export default {
   name: "Product",
   components: {
-    participants,
-    products,
   },
   data() {
     return {
-      product: products,
-      participant: participants,
+      product: [],
+      participant: [],
       total: 0,
       membars: null
     };
   },
   methods: {
+    async fgetUser() {
+      this.participant = await getUser()
+    },
+    async fgetProduct() {
+      this.product = await getProduct()
+      this.findMabers()
+      this.findTotal()
+    },
     findHowMuchEachToPay(name) {
       return this.product.map(p => p.participants.includes(name)
         ? (parseInt(p.price) * parseInt(p.quantity)) / p.participants.length : 0,
@@ -53,8 +59,8 @@ export default {
     }
   },
   mounted() {
-    this.findTotal(),
-      this.findMabers()
+    this.fgetUser(),
+      this.fgetProduct()
   }
 
 };
@@ -71,9 +77,12 @@ export default {
 .productName {
   margin: 12px;
 }
+
 .tableFor {
   justify-content: space-around;
 }
 
-button{ padding: 2px;}
+button {
+  padding: 2px;
+}
 </style>
