@@ -9,8 +9,10 @@
       <div className="tableFor">
         <p>By 7</p>
         <p className="productTotal">R$ {{this.findHowMuchEachToPay(p.name)}}</p>
-        <button>icon</button>
-        <button>icon</button>
+       <a href="/u">
+         <button>U</button>
+       </a>
+        <button>D</button>
       </div>
     </div>
   </div>

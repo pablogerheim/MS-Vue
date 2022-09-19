@@ -17,7 +17,6 @@ export default {
   components: {
     participants,
     products,
-
   },
   data() {
     return {
@@ -60,11 +59,13 @@ export default {
   line-height: 1.75rem;
   margin: 8px;
   padding: 8px;
+  
 }
 .peopleName{
   margin: 12px;
 }
 .peopleTotal{
+  
   margin: 12px;
   border-left-width: 2px;
   border-style: solid;

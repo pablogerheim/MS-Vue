@@ -1,12 +1,8 @@
 <template>
-  <div class="Session">
-    <a href="/c">
-      <h1>Session</h1>
-    </a>
-
-    <div>
+  <div className="box">
+    <div className="summary">
       <input placeholder="Name Purchase" />
-      <button className="Finish">Finish</button>
+      <button className="Finish" @click="clearTable">Finish</button>
     </div>
     <a href="/c"> <button className="Add-Product">Add Product</button> </a>
     <div>
@@ -22,6 +18,7 @@
 <script >
 import People from "../components/People.vue";
 import Product from "../components/Product.vue";
+import {clearTable } from "../api/api.js";
 export default {
   name: "Session",
   components: {
@@ -34,6 +31,9 @@ export default {
     };
   },
   methods: {
+    clearTable(){
+      clearTable()
+    },
     selecPage(bolean) {
       this.page = bolean
     },
@@ -45,7 +45,8 @@ export default {
 </script>
 <style scoped>
 .Finish {
-  background-color: rgb(248 113 113)
+  background-color: rgb(248 113 113);
+  margin:10px 0 10px 20px;
 }
 
 .Add-Product {
@@ -59,5 +60,9 @@ export default {
 .By-Product {
   border: none;
   background-color: rgb(255, 255, 255)
+}
+.summary{
+  padding: 0 10px;
+  align-items: center;
 }
 </style>
