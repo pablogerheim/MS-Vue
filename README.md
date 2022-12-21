@@ -1,13 +1,13 @@
 # Market Splite Vue.js
 
-Este projeto tem como objetivo aprender um pouco sobre Vue.js. Apresente a primeira versão do aplicativo Market Split, composto de apenas duas telas e sem backend.
+Este projeto tem como objetivo aprender um pouco sobre Vue.js. Apresente a primeira versão do aplicativo Market Split, composto de apenas tres telas e sem backend.
 Logo não oferece funcionalidades, é apenas uma experiencia.
 
-## Link Vercel: https://loja-puce.vercel.app/
+## Link Vercel: https://ms-vue.vercel.app/
 
 Imagen Ilustrativa
 
-![Ilustrando](https://user-images.githubusercontent.com/90703690/208501118-b48fe384-09c5-428a-bcba-beab8f60b66c.png)
+![Ilustrando](https://user-images.githubusercontent.com/90703690/208976920-2d1c35db-f07a-4160-b104-dd64684a1216.png)
 
 ## 🛠️ Construído com
 
