@@ -12,7 +12,7 @@ Imagen Ilustrativa
 ## 🛠️ Construído com
 
 Front
-+ [Vue](https://vuejs.org/) - Framework 
+* [Vue](https://vuejs.org/) - Framework 
 * [Vite](https://vitejs.dev/) - Frontend Tooling
 
 Geral
