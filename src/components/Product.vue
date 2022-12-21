@@ -9,7 +9,7 @@
       <div className="tableFor">
         <p>By 7</p>
         <p className="productTotal">R$ {{this.findHowMuchEachToPay(p.name)}}</p>
-        <a href="/u">
+        <a href="/UpdateProd">
           <button>U</button>
         </a>
         <button>D</button>
@@ -18,7 +18,8 @@
   </div>
 </template>
 <script >
-import { getUser, getProduct } from "../api/api.js";
+// import { getUser, getProduct } from "../api/api.js";
+import { participants, products } from "../assets/mock.js";
 export default {
   name: "Product",
   components: {
@@ -33,10 +34,12 @@ export default {
   },
   methods: {
     async fgetUser() {
-      this.participant = await getUser()
+      this.participant = participants
+      // await getUser()
     },
     async fgetProduct() {
-      this.product = await getProduct()
+      this.product = products
+      // await getProduct()
       this.findMabers()
       this.findTotal()
     },
@@ -83,6 +86,10 @@ export default {
 }
 
 button {
-  padding: 2px;
+  padding: 2px 4px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(134, 169, 180);
+  margin-top: 20px;
 }
 </style>

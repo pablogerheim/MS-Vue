@@ -1,7 +1,7 @@
 <template>
   <div className="box">
     <div className="control">
-      <a href="/s">
+      <a href="/Session">
         <button className="control-back"> icon</button>
       </a>
       <button className="control-add" @click="fcreateProduct()">Add Product</button>
@@ -35,7 +35,8 @@
   </div>
 </template>
 <script >
-import { getUser, createProduct } from "../api/api.js";
+// import { getUser, createProduct } from "../api/api.js";
+import { participants } from "../assets/mock.js";
 export default {
   name: 'CreateProd',
 
@@ -63,15 +64,10 @@ export default {
       } else this.part = []
     },
     async fgetUser() {
-      this.participant = await getUser()
+      this.participant = participants
+      // await getUser()
     },
     async fcreateProduct() {
-      console.log({
-        name: this.name,
-        price: this.price,
-        quantity: this.quantity,
-        participants: [...this.part]
-      })
       await createProduct({
         name: this.name,
         price: this.price,

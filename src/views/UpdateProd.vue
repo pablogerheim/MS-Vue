@@ -1,7 +1,7 @@
 <template>
   <div className="box">
     <div className="control">
-      <a href="/s">
+      <a href="/Session">
         <button className="control-back"> icon</button>
       </a>
       <button className="control-update" @click="fupdateProduct()">Update Product</button>
@@ -35,7 +35,8 @@
   </div>
 </template>
 <script >
-import { getUser, getbyid, updateProduct } from "../api/api.js";
+// import { getUser, getbyid, updateProduct } from "../api/api.js";
+import { participants } from "../assets/mock.js";
 export default {
   name: 'UpdateProd',
 
@@ -58,7 +59,8 @@ export default {
       return this.part.includes(name)
     },
     async fgetUser() {
-      this.participant = await getUser()
+      this.participant = participants
+      // await getUser()
     },
     fupdateProduct() {
       updateProduct({

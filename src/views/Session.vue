@@ -2,9 +2,11 @@
   <div className="box">
     <div className="summary">
       <input placeholder="Name Purchase" />
-      <button className="Finish" @click="clearTable">Finish</button>
+      <a href="/">
+        <button className="Finish" @click="clearTable">Finish</button>
+      </a>
     </div>
-    <a href="/c"> <button className="Add-Product">Add Product</button> </a>
+    <a href="/CreateProd"> <button className="Add-Product">Add Product</button> </a>
     <div>
       <button @click="selecPage(true)" className="By-People">By People</button>
       <button @click="selecPage(false)" className="By-Product">By Product</button>

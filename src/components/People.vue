@@ -11,7 +11,8 @@
   </div>
 </template>
 <script >
-import { getUser, getProduct } from "../api/api.js";
+// import { getUser, getProduct } from "../api/api.js";
+import { participants, products } from "../assets/mock.js";
 export default {
   name: "People",
   components: {
@@ -26,10 +27,12 @@ export default {
   },
   methods: {
     async fgetUser() {
-      this.participant = await getUser()
+      this.participant =participants
+      //  await getUser()
     },
     async fgetProduct() {
-      this.product = await getProduct()
+      this.product = products
+      // await getProduct()
       this.findMabers()
       this.findTotal()
     },

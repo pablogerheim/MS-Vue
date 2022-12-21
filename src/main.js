@@ -12,13 +12,13 @@ import {
 } from "vue-router";
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        { path: '/', name: 'Home', component: Home },
-        { path: '/s', name: 'Session', component: Session },
-        { path: '/c', name: 'CreateProd', component: CreateProd },
-        { path: '/u', name: 'UpdateProd', component: UpdateProd }
-    ]
-})
+	history: createWebHistory(),
+	routes: [
+		{ path: "/", name: "Home", component: Home },
+		{ path: "/Session", name: "Session", component: Session },
+		{ path: "/CreateProd", name: "CreateProd", component: CreateProd },
+		{ path: "/UpdateProd", name: "UpdateProd", component: UpdateProd },
+	],
+});
 
 createApp(App).use(router).mount('#app')

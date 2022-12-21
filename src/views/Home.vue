@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <a href="/s"><h1>New Purchase</h1></a>
+    <a href="/Session"><h1>New Purchase</h1></a>
   </div>
 </template>
 <script >
