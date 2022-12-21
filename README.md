@@ -1,7 +1,21 @@
-# Vue 3 + Vite
+# Market Splite Vue.js
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este projeto tem como objetivo aprender um pouco sobre Vue.js. Apresente a primeira versão do aplicativo Market Split, composto de apenas duas telas e sem backend.
+Logo não oferece funcionalidades, é apenas uma experiencia.
 
-## Recommended IDE Setup
+## Link Vercel: https://loja-puce.vercel.app/
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+Imagen Ilustrativa
+
+![Ilustrando](https://user-images.githubusercontent.com/90703690/208501118-b48fe384-09c5-428a-bcba-beab8f60b66c.png)
+
+## 🛠️ Construído com
+
+Front
++ [Vue](https://vuejs.org/)
+* [Vite](https://vitejs.dev/) - Frontend Tooling
+
+Geral
+* [GitHub](https://github.com/) - Software
+* [Vercel](https://vercel.com) - Hospedagem
+* [VS Code](https://code.visualstudio.com/)

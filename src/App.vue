@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div className="mainDiv">
     <Toolbar/>
     <RouterView />
   </div>
@@ -18,5 +18,9 @@ export default {
 </script>
 
 <style scoped>
-
+.mainDiv {
+  min-height: 700px;
+  background: white;
+  background-color: white;
+}
 </style>
