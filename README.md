@@ -12,10 +12,10 @@ Imagen Ilustrativa
 ## 🛠️ Construído com
 
 Front
-+ [Vue](https://vuejs.org/)
++ [Vue](https://vuejs.org/) - Framework 
 * [Vite](https://vitejs.dev/) - Frontend Tooling
 
 Geral
 * [GitHub](https://github.com/) - Software
 * [Vercel](https://vercel.com) - Hospedagem
-* [VS Code](https://code.visualstudio.com/)
+
